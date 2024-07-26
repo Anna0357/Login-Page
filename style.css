@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    background-color: #f1ddca;
+}
+a{
+    text-decoration: none;
+    color: #a14434;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: #fff;
+    align-items: center;
+    height: 6vh;
+}
+.logo{
+    font-size: 1.6em;
+    font-weight: 600;
+    padding-left: 6em;
+}
+
+.list{
+    display: flex;
+    /* justify-content: center;  не сработало почему-то*/
+    gap: 4em;
+    margin: 0 26em;
+    font-size: 16px;
+    color: #b56f63;
+}
+.list a:hover{
+    border-bottom: 2px solid #a14434;
+}
+.button{
+    margin-right: 12em;
+}
+button{
+    background-color: #a14434;
+    padding: 0.4em 1.6em;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+button:hover{
+    background-color: #843b2e;
+}
+.block{
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    background-color: #fff;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 400;
+    margin: 10px 30px;
+}
+input{
+    margin: 0 15px;
+    padding: 10px;
+    border: 1px solid #a4a4a4;
+}
+.form a{
+    font-size: 15px;
+    margin: 0 15px;
+}
+
+.form button{
+    margin: 20px 100px;
+    padding: 0.7em;
+}
+
+@media only screen and (max-width:520px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        height: 10vh;
+    }
+    .logo{
+        padding-left: 0.5em;
+    }
+    .bottom{
+        margin: 0;
+        /* margin-left: 4em; не работает */
+        order: 1;
+    }
+    .list{
+        margin: 0;
+        order: 2;
+        display: flex;
+        /* justify-content: space-evenly; не работае */
+        margin: 0 5.5em;
+        gap: 5em;
+        font-size: 18px;
+    }
+}
